@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Video player</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="player">
+        <video
+          id="video"
+          src="./videos/lofi.mp4"
+          poster="images/poster.jpg"
+          width="900px"
+        ></video>
+        <div class="player-overlay">
+          <h2 class="player-title">Música para programar</h2>
+          <div class="player-actions">
+            <button
+              class="boton"
+              id="anterior"
+              arial-label="atrasar video"
+              title="atrasar video"
+            ></button>
+            <button
+              class="boton"
+              id="play"
+              arial-label="reproducir video"
+              title="reproducir video"
+            ></button>
+            <button
+              class="boton"
+              id="pause"
+              arial-label="pausar video"
+              title="pausar video"
+              hidden
+            ></button>
+            <button
+              class="boton"
+              id="siguiente"
+              arial-label="adelantar video"
+              title="adelantar video"
+            ></button>
+          </div>
+          <div class="progress-bar">
+            <input id="progreso" type="range" min="0" value="0" step="1" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
